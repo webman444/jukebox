@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Suggest a Song</title>
+</head>
+<body>
+
+  <h1 style="font-size: 100px; margin: 1px;">Put a song onto the Jukebox!</h1>
+
+  <form action="jukeboxrecording.php" method="post">
+    <label for="digits">Designated three-digit code:</label>
+    <input type="text" name="digits" id="digits"><br><br>
+
+    <label for="songname">Song name:</label>
+    <input type="text" name="songname" id="songname"><br><br>
+
+    <input type="submit" value="Submit Suggestion">
+    </form>
+    <a style="color: black;" href="jukeboxindex.html"><button>Go back</button></a>
+  <style>
+    @font-face {
+        font-family: 'Dream Head';
+        src: url('fonts/Dream Head.otf') format('opentype'); 
+    }
+    @font-face {
+        font-family: 'Keep on Truckin';
+        src: url('fonts/KeeponTruckin.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Arista';
+        src: url('fonts/Arista-Pro-Alternate-Bold-trial.ttf') format('truetype');
+    }
+    body {
+        font-family: 'Keep on Truckin';
+        background-image: url(gradient.png);
+        color: #fff;
+        text-align: center;
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 64px;
+        color: #ffffff;
+        text-shadow: 0 0 12px #000000;
+        margin-bottom: 40px;
+    }
+
+    label {
+        font-size: 22px;
+        display: block;
+        margin-bottom: 10px;
+        color: #fffff0;
+        text-shadow: 0 0 12px #000000;
+    }
+
+    input[type="text"] {
+        width: 300px;
+        padding: 12px;
+        font-size: 18px;
+        background: #fff;
+        color: #000;
+        border: 2px solid #000000;
+        border-radius: 8px;
+        outline: none;
+        transition: 0.3s ease;
+        margin-bottom: 30px;
+        box-shadow: 0 0 10px;
+        text-align: center;
+    }
+
+    input[type="text"]:focus {
+        border-color: orange;
+        box-shadow: 0 0 10px;
+    }
+    input[type="text"]:hover {
+        border-color: orange;
+        box-shadow: 0 0 10px;
+    }      
+
+    input[type="submit"], button {
+        background: white;
+        color: black;
+        font-size: 18px;
+        padding: 12px 28px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Arista';
+        box-shadow: 0 4px 15px;
+        transition: all 0.3s ease;
+    }
+
+    input[type="submit"]:hover, button:hover {
+        transform: scale(1.05);
+        background: orange;
+    }
+    a, button {
+        margin: 34px;    
+    }
+  </style>
+</body>
+</html>

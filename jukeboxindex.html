@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jukebox</title>
+    <meta name="viewport" content="width=display-width, initial-scale=1.0">
+  </head>
+  <body>
+      <center>
+        <h1>Jukebox</h1>
+        <h2>Type in a random triple-digit code to listen to a random song!</h2>
+        <h3>Donate to @mayorflappy on PayPal</h3>
+        <form action="jukeboxresult.php" method="post">
+        <label for="code"></label>
+        <input type="text" name="code"><br><br>
+        <input type="submit" value="Enter">
+        </form>
+        <a href="jukeboxsuggestions.html" style="margin: 67px; margin-top: auto;"><button>Submit a suggestion</button></a>
+            <style>
+                @font-face {
+                    font-family: 'Dream Head';
+                    src: url('fonts/Dream Head.otf') format('opentype'); 
+                }
+                @font-face {
+                    font-family: 'Keep on Truckin';
+                    src: url('fonts/KeeponTruckin.ttf') format('truetype');
+                }
+                @font-face {
+                    font-family: 'Arista';
+                    src: url('fonts/Arista-Pro-Alternate-Bold-trial.ttf') format('truetype');
+                }
+                h1 {
+                    font-size: 180px;
+                    font-family: 'Dream Head';
+                    margin: 1px;
+                    margin-top: 200px;
+                    margin-bottom: 0px;
+                    color: white;
+                    text-shadow: 0 0 12px #000000;
+                }
+                h2 {
+                    color: white;
+                    font-family: 'Keep on Truckin';
+                    text-shadow: 0 0 12px #000000;
+                    font-size: 20px;
+                    margin-top: 1px;
+                }
+                h3{
+                    color: white;
+                    font-family: 'Keep on Truckin';
+                    text-shadow: 0 0 12px #000000;
+                    font-size: 10px; 
+                }
+                body {
+                    background-image: url(gradient.png);
+                }
+                input[type="submit"], button {
+                    font-family: 'Arista';
+                    background: white;
+                    color: black;
+                    font-size: 18px;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    font-family: 'Arista';
+                    box-shadow: 0 4px 15px;
+                    transition: all 0.3s ease; 
+                }
+                input[type="text"] {
+                    width: 300px;
+                    padding: 12px;
+                    font-size: 18px;
+                    background: #fff;
+                    color: #000;
+                    border: 2px solid #000000;
+                    border-radius: 8px;
+                    outline: none;
+                    transition: 0.3s ease;
+                    text-align: center;
+                    box-shadow: 0 4px 15px;
+                }
+                a, button{
+                    margin: 10px;
+                }
+                button:hover {
+                    transform: scale(1.05);
+                    background: orange;
+                } 
+                input[type="submit"]:hover {
+                    transform: scale(1.05);
+                    background: orange;
+                }
+                input[type="text"]:focus {
+                    border-color: orange;
+                    box-shadow: 0 0 10px;
+                }
+                input[type="text"]:hover {
+                    border-color: orange;
+                    box-shadow: 0 0 10px;
+                }
+            </style>
+      </center>
+  </body>
+</html>
