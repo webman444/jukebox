@@ -9,7 +9,7 @@ $pass = trim($_POST['code']);
   <style>
     body {
       text-align: center;
-      background-image: url(gradient.png);
+      background-image: url(images/gradient.png);
       color: white;
       font-family: sans-serif;
     }
@@ -86,7 +86,7 @@ $pass = trim($_POST['code']);
 if (array_key_exists($pass, $songMap)) {
   $song = $songMap[$pass];
   echo "<h2>Now playing: " . htmlspecialchars($song['title']) . "</h2>";
-  echo "<img id='vinyl' src='vinyl.png' alt='Spinning Vinyl'>";
+  echo "<img id='vinyl' src='images/vinyl.png' alt='Spinning Vinyl'>";
   echo "<audio id='player' autoplay>
           <source src='songs/" . htmlspecialchars($song['file']) . "' type='audio/mpeg'>
           Your browser does not support the audio element.
